@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.com.emelyn.erp.dominio.transacciones;
+package co.com.emelyn.erp.dominio.pagos;
 
 import co.com.emelyn.erp.dominio.configuracion.Caja;
 import java.util.Date;
