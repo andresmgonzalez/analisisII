@@ -35,6 +35,18 @@ public class Usuario {
      * estado del usuario.
      */
     private String estado;
+    
+    /**
+     * ususario de la aplicacion.
+     */
+    private String user;
+
+    
+    /**
+     * password del usuario.
+     */
+    private String password;
+
 
     /**
      * @return the identificacion
@@ -105,5 +117,23 @@ public class Usuario {
     public void setRol(Rol rol) {
         this.rol = rol;
     }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    
+    
 
 }
