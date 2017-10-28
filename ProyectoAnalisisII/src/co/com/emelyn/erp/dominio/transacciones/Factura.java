@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.com.emelyn.erp.dominio.pedidos;
+package co.com.emelyn.erp.dominio.transacciones;
 
 import co.com.emelyn.erp.dominio.cliente.Cliente;
 import co.com.emelyn.erp.dominio.configuracion.Usuario;
@@ -13,37 +13,41 @@ import java.util.Date;
  *
  * @author agonzalez
  */
-public class Pedido {
+public class Factura {
     
-  /** codigo del Pedido. */
+  /** codigo de la Factura. */
   private String codigo;
   
-  /** fecha del Pedido. */
+  /** fecha de la Factura. */
   private Date fecha;
   
-  /** cliente del Pedido. */
+  /** cliente de la Factura. */
   private Cliente cliente;
   
-  /** vendedor del Pedido. */
+  /** vendedor de la Factura. */
   private Usuario vendedor;
   
-    /** descuentoEncabezado del Pedido. */
+    /** descuentoEncabezado de la Factura. */
   private double descuentoEncabezado;
   
-    /** detalles del Pedido. */
+    /** detalles de la Factura. */
   private DetallesPedido[] detalles;
   
-    /** totalBruto del Pedido. */
+    /** totalBruto de la Factura. */
   private double totalBruto;
   
-    /** totalDescuentos del Pedido. */
+    /** totalDescuentos de la Factura. */
   private double totalDescuentos;
   
-    /** totalImpuestos del Pedido. */
+    /** totalImpuestos de la Factura. */
   private double totalImpuestos;
   
-    /** valorTotal del Pedido. */
-  private double valorTotalPedido;
+    /** valorTotal de la Factura. */
+  private double valorTotalFactura;
+  
+  /** pedidoRelacionado a la Factura. */
+  private Pedido pedidoRelacionado;
+  
 
   
     public String getCodigo() {
@@ -118,17 +122,21 @@ public class Pedido {
         this.totalImpuestos = totalImpuestos;
     }
 
-    public double getValorTotalPedido() {
-        return valorTotalPedido;
+    public double getValorTotalFactura() {
+        return valorTotalFactura;
     }
 
-    public void setValorTotalPedido(double valorTotalPedido) {
-        this.valorTotalPedido = valorTotalPedido;
+    public void setValorTotalFactura(double valorTotalFactura) {
+        this.valorTotalFactura = valorTotalFactura;
     }
-  
-  
-  
-  
+
+    public Pedido getPedidoRelacionado() {
+        return pedidoRelacionado;
+    }
+
+    public void setPedidoRelacionado(Pedido pedidoRelacionado) {
+        this.pedidoRelacionado = pedidoRelacionado;
+    }
   
     
 }
