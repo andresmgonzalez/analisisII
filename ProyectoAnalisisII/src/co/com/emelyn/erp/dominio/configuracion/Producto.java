@@ -28,6 +28,48 @@ public class Producto {
   
   /** precioVenta del producto. */
   private double precioVenta;
+  
+  /**
+   * Metodo utilizado para buscar un producto por el codigo.
+   * @param codigoProducto 
+   */
+  public void buscarProducto(String codigoProducto) {
+      
+  }
+  
+  /**
+   * Metodo utilizado para guardar un producto.
+   * @param codigoProducto 
+   */
+  public void guardarProducto(Producto producto) {
+      
+  }
+  
+  /**
+   * Metodo utilizado para eliminar un producto.
+   * @param codigoProducto 
+   */
+  public void eliminarProducto(Producto producto) {
+      
+  }
+  
+  /**
+   * Metodo utilizado para crear un producto.
+   * @param codigoProducto 
+   */
+  private void crearProducto(Producto producto) {
+      
+  }
+  
+  /**
+   * Metodo utilizado para actualizar un producto.
+   * @param codigoProducto 
+   */
+  private void actualizarProducto(Producto producto) {
+      
+  }
+  
+ 
 
   /**
    * @return the codigo
